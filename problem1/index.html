@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Lab 2 - Problem 2</title>
+</head>
+<body>
+    <header>
+        <h1>Matthew's Note Taker</h1>
+    </header>
+
+    <div class="grid">
+        <div id="notes">
+            <h2 id="stored-notes-title">Stored notes</h2>
+            <div id="notes-stored"></div>
+        </div>
+
+        <div id="notes-new">
+            <br>
+            <div id="notes-buttons">
+                <button id="note-add">add note</button>
+                <button id="note-edit">edit note</button>
+                <button id="note-delete">delete note</button>
+                <select id="notes-colour-select">
+                    <option value="red">red</option>
+                    <option value="green">green</option>
+                    <option value="blue">blue</option>
+                </select>
+            </div>
+
+            <textarea id="notes-textarea"></textarea>
+        </div>
+    </div>
+    <script src="./node_modules/rxjs/dist/bundles/rxjs.umd.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
