@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Countdown Timer</title>
+    <style>
+    </style>
+</head>
+<body>
+    <h1>Countdown Timer</h1>
+
+    <div>
+        <input type="text" id="hours" placeholder="H" oninput="this.value = this.value.replace(/[^0-9]/g, '');"> :
+        <input type="text" id="minutes" placeholder="M" oninput="this.value = this.value.replace(/[^0-9]/g, '');"> :
+        <input type="text" id="seconds" placeholder="S" oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+    </div>
+
+    <button id="startButton">Start Countdown</button>
+
+    <div id="timer"></div>
+
+    <script src="./../node_modules/rxjs/dist/bundles/rxjs.umd.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
