@@ -23,8 +23,6 @@ deleteClick$.subscribe(() => deleteNote());
 // functions
 function addNote() {
     const newNote = new Note(noteText.value, noteColour.value, currentNote);
-    console.log(newNote)
-    console.log(newNote.element)
     
     if (noteText.value.trim() !== "") {
         // call note.create etc
